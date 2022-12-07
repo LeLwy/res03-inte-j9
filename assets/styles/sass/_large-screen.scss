@@ -6,9 +6,8 @@ html{
     body{
         
         min-height: 100vh;
-        width: 100vw;
         
-        h1, h2, h3, h4, h5{
+        h1, h2, h3, h4{
             
             font-family: $titleFont;
         }
@@ -89,7 +88,7 @@ html{
                             padding: 3rem 2rem;
                             background-color: $white;
                             border-radius: 10px;
-                            box-shadow: 3px 3px 5px $black;
+                            box-shadow: 2px 2px 5px rgb(0 0 0 / 10%);
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
@@ -152,8 +151,7 @@ html{
                                 
                                 &>h5{
                                     
-                                    font-size: 1.5rem;
-                                    font-weight: thin;
+                                    font-size: 1.2rem;
                                     color: $black;
                                     margin: 3rem 0 1rem 0;
                                 }
@@ -215,6 +213,7 @@ html{
                         background-color: $white;
                         border: 1px solid $lightBlue;
                         border-radius: 10px;
+                        box-shadow: 2px 2px 5px rgb(0 0 0 / 10%);
                         
                         &>h3{
                                     
@@ -278,18 +277,57 @@ html{
         &#single{
             
             background-color: $lightGrey;
+            width: 100vw;
             
             @media(min-width: 720px){
                 
-                &>main{
+            &>main{
                     
-                    width: 80vw;
-                    margin: auto;
                     padding: 4rem 1.5rem;
                     background-color: $white;
+                    display: grid;
+                    grid-template-columns: 1fr 3.5fr;
+                    width: 80vw;
+                    margin: auto;
+                    
+                    &>aside{
+                    
+                        grid-column: 1/2;
+                        padding: 0 1rem;
+                        
+                        &>h4{
+                            
+                            font-size: 1.8rem;
+                            font-weight: bold;
+                            color: $darkBlue;
+                            margin-bottom: 1.5rem;
+                        }
+                        
+                        &>ul{
+                            
+                            &>li{
+                                
+                                margin-bottom: 1.5rem;
+                                
+                                &>h2{
+                                    
+                                    font-size: 1.4rem;
+                                    font-weight: bold;
+                                    color: $lightBlue;
+                                }
+                                
+                                &>h3{
+                                    
+                                    font-family: $mainFont;
+                                    font-size: 1.3rem;
+                                }
+                            }
+                        }
+                    }
                     
                     &>header{
                         
+                        grid-column: 2/3;
                         padding: 2.5rem 2.5rem 2.5rem 1.5rem;
                         background-color: $blue;
                         
@@ -311,6 +349,7 @@ html{
                     
                     &>section{
                         
+                        grid-column: 2/3;
                         display: grid;
                         grid-template-columns: 1fr 1fr;
                         grid-column-gap: 2rem;
@@ -360,6 +399,7 @@ html{
                 align-items: center;
                 justify-content: center;
                 padding: 1vh 0;
+                width: 100vw;
                 
                 &>figure{
                     
@@ -405,6 +445,7 @@ html{
                 background-color: $darkBlue;
                 text-align: center;
                 padding: 2vh 0;
+                width: 100vw;
                 
                 &>h2{
                     
