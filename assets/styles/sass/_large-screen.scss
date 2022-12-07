@@ -326,6 +326,19 @@ html{
                             
                         }
                         
+                        &>figure{
+                            
+                            &>img{
+                                
+                                max-width: 95%;
+                            }
+                            
+                            &>figcaption{
+                                
+                                display: none;
+                            }
+                        }
+                        
                         &>p{
                             
                             font-size: 1.4rem;
